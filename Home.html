@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="Home.css">
+
+</head>
+
+<body onLoad="showSlides()">
+	<script>
+	let slideIndex = 0;
+showSlides();
+function showSlides()
+{
+let i;
+let slides = document.getElementsByClassName("mySlides");
+for (i = 0; i < slides.length; i++)
+{
+ slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length)
+{slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 2500); 
+}	
+		
+function addToCart(productName, price) {
+      alert("Added to cart: " + productName + " - Rs" + price);
+    }
+
+</script>
+	
+<header>
+    <a href="#"><img src="Images/332908969_3157164351095892_8198187503957028333_n.jpg" class="logo" alt=""></a>
+  
+
+  <div>
+    <ul id="navbar">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Shop.php">Shop</a></li>
+	  <li><a href="Profile.php">Login</a></li>
+	  <li><a href="UserP.php">Profile</a></li>
+      <li><a href="cart.php"><img src="Images/cart.png"></a></li>
+    </ul>
+  </div>
+</header>
+	
+<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="Images/asus-rog-pictures-8hgoetrb7fuox4fn.jpg" height="500px" width="100%">
+		</div>
+		</div>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="Images/asus-tuf.jpg" height="500px" width="100%">
+		</div>
+		</div>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="Images/msi-csm_Banner_1200x600_0222b0cc92.jpg" height="500px" width="100%">
+		</div>
+		</div>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="Images/msi-monitor-20191106-3.jpg" height="500px" width="100%">
+		</div>
+		</div>
+	
+	<section id="products" class="section-1">
+	<h2>Our Products</h2>
+	<div class="pro-container">
+	<div class="pro">
+		<img src="Images/msi-p-1.jpg" alt="">
+		<dev class="des">
+		<h5>MSI GL63</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		
+		<div class="pro">
+		<img src="Images/msi-p-2.jpg" alt="">
+		<dev class="des">
+		<h5>MSI GL63 I7</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		<div class="pro">
+		<img src="Images/Lenevo-p-2.jpg" alt="">
+		<dev class="des">
+		<h5>Lenevo</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		<div class="pro">
+		<img src="Images/msikatana-p-4.jpg" alt="">
+		<dev class="des">
+		<h5>MSI KATANA</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		
+		</div>
+		<br>
+		<button class="more"> <a href="Shop.html" style="color: aliceblue"> More Products</a> </button>
+		
+		</section>
+	
+	<section id="products" class="section-1">
+	<h2>New Arrivals</h2>
+	<div class="pro-container">
+	<div class="pro">
+		<img src="Images/New arrivals/Lenevo 1.jpg" alt="">
+		<dev class="des">
+		<h5>Lenevo</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		<div class="pro">
+		<img src="Images/New arrivals/dell.jpg" alt="">
+		<dev class="des">
+		<h5>Dell</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		<div class="pro">
+		<img src="Images/New arrivals/hp.jpg" alt="">
+		<dev class="des">
+		<h5>HP</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		<div class="pro">
+		<img src="Images/New arrivals/asusu tuf.png" alt="">
+		<dev class="des">
+		<h5>TUF</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		<div class="pro">
+		<img src="Images/New arrivals/asusu tuf.png" alt="">
+		<dev class="des">
+		<h5>TUF</h5>
+		<h4>Rs 200,000.00</h4>
+		</dev>
+		<a href="#"><img src="Images/cart.png" class="cart" onclick="addToCart('Product 2', 1299)"></a>
+		</div>
+		
+		</div>
+		
+		</section>
+	
+	<footer>&copy;2023 MI Computer Store. All rights reserved.</footer>
+	
+	
+</body>
+</html>
